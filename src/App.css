@@ -1,38 +1,120 @@
-.App {
-  text-align: center;
+/* src/App.css */
+body {
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.light {
+  background-color: white;
+  color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.dark {
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+button {
+  margin: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Vmax Css */
+.vmax-head-title{
+  color: blue;
+  font-weight: bolder;
+}
+.vmax-form-bg{
+  background-color: rgb(236, 232, 0);
+  border-radius: 5px;
+}
+.vmax-button-color{
+  background-color: blue;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin-left: -40px;
+  /* padding-left: -10px;
+  padding-right: -10px; */
+ 
+}
+.vmax-input-border{
+  border: none;
+  border-radius: 2px;
+}
+.vmax-input-border:hover{
+  border: 1px solid black;
+}
+
+
+.input-button-container {
+  display: flex; /* Aligns items in a row */
+  gap: 10px; /* Optional: Adds space between the input and button */
+}
+.vmax-table{
+  width: 100%;
+  margin-top: 20px;
+
+}
+.vmax-table-headclr{
+  background-color: rgb(85, 110, 168);
+  padding: 5px;
+}
+td{
+  border: 1px solid black;
+
+}
+th{
+  border: 1px solid black;
+
+}
+
+
+
+.vmax-input-border {
+   /* Ensures the input takes up the full width of its container */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.vmax-button-color {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+.ms-2 {
+  margin-left: 8px; /* Adds a small margin between the input and the button */
+}
+
+
+
+/* Media screens */
+@media screen and (max-width: 992px) {
+  .vmax-form-bg {
+    /* background-color: blue; */
+    margin-left: auto;
+    margin-right: auto;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media screen and (min-width: 742px) and (max-width: 991px){
+  .vmax-responcive {
+    /* background-color: blue; */
+   gap: 40px;
+  }
+}
+@media screen and (min-width: 742px) and (max-width: 991px) {
+  .vmax-res2 {
+    /* background-color: blue; */
+   margin-top: -25px;
   }
 }
